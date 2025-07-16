@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUST</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo1.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1> Our Courses</h1>
+    </section>
+<!-- couses -->
+        
+    <section class="course">
+        <h1>Courses We Offer </h1> 
+        <p>Study with us in NUST</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Courses provide foundational knowledge and prepare students for higher education.</p>
+            </div>
+            <div class="course-col">
+                <h3>Undergraduation</h3>
+                <p>Programs offer comprehensive and career-oriented curricular across multiple disciplines,fostering critical thinking and practical skills.</p>
+            </div>
+            <div class="course-col">
+                <h3>Postgraduation</h3>
+                <p>Programs emphasize specialized knowledge,research opportunities, and professional development to excel in their chosen fields.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- facilities -->
+
+    <!-- facilities -->
+<section class="facilities">
+    <h1>NUST Facilities</h1>
+    <p>Our university is equipped with state-of-the-art facilities from well-stocked libraries and advanced laboratories to modern classrooms, sports complexes, hostels, and health centers, every aspect of campus life is designed to provide comfort, convenience, and a conducive environment for learning.</p>
+     <div class="row">
+        <div class="facilities-col">
+            <img src="images/library.png">
+            <h3>World Class Library</h3>
+            <p>Our library provides information that inculcates ideas and develops knowledge that is so essential to function successfully in today's knowledge-based society.</p>
+         </div>
+         <div class="facilities-col">
+            <img src="images/basketball.png">
+            <h3>Largest Play Ground</h3>
+            <p>The students are given regular and rigorous training in a systematic way by qualified and professional coaches in the game of students' choice.</p>
+         </div>
+         <div class="facilities-col">
+            <img src="images/cafeteria.png">
+            <h3>Tasty and Healthy Food</h3>
+            <p>Our cafeteria have menus that are designed by a team of professional dieticians, comprising nutritious and wholesome food to ensure a well-balanced diet.</p>
+         </div>
+    </div>
+</section>
+<!-- footer -->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>&copy; 2025 NUST-Nuthana University of Science and Technnology. All rights reserve.  </p>
+    <div class="icons">
+         <i class="fa-brands fa-facebook"></i>
+         <i class="fa-brands fa-twitter"></i>
+         <i class="fa-brands fa-instagram"></i>
+         <i class="fa-brands fa-linkedin"></i>
+    </div>
+
+</section>
+
+    <!------javaScript for toggle menu--------->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+</body>
+
+</html>

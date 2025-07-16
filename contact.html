@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUST</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo1.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+  <h1>Contact Us</h1>
+    </section>
+
+    <!-- contact us -->
+
+
+
+    <section class="contact-us">
+
+        <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>KU Road 12,<br>Katukuri Building</h5>
+                    <p>Hanamkonda,Telangana,IN</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+47 41286050 </h5>
+                    <p>Monday to Sturday,<br>10AM to 6PM </p>
+                </span>
+            </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <span>
+                <h5>infonust@gmail.com</h5>
+                <p>Email Us Your Query</p>
+            </span>
+        </div>
+        </div>
+        
+        <div class="contact-col">
+            <form action="">
+                <input type="text" placeholder="Enter Your Name" required>
+                <input type="email" placeholder="Enter Your Email" required>
+                <input type="text" placeholder="Enter Your Subject" required>
+                <textarea rows="8" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+
+    
+<!-- footer -->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>&copy; 2025 NUST-Nuthana University of Science and Technnology. All rights reserve.  </p>
+    <div class="icons">
+         <i class="fa-brands fa-facebook"></i>
+         <i class="fa-brands fa-twitter"></i>
+         <i class="fa-brands fa-instagram"></i>
+         <i class="fa-brands fa-linkedin"></i>
+    </div>
+
+</section>
+
+    <!------javaScript for toggle menu--------->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+</body>
+
+</html>
